@@ -1,6 +1,7 @@
 package br.com.fiap.paymentservice.Controller;
 
 import br.com.fiap.paymentservice.Entity.Payment;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -8,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
+@Api(value = "Payment", description = "a list of payments")
 public class PaymentController {
     private ArrayList<Payment> payments = new ArrayList<>();
 
